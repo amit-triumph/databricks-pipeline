@@ -24,7 +24,7 @@ resources:
       tasks:
         - task_key: get_cust_trn_count
           notebook_task:
-            notebook_path: ../src/transformation.ipynb
+            notebook_path: ../src/total_trn_cust_wise.ipynb
             source: WORKSPACE
 
       environments:

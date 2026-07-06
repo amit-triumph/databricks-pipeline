@@ -25,6 +25,13 @@ resources:
         - task_key: notebook_task
           notebook_task:
             notebook_path: ../src/customer_360.ipynb
+            source: WORKSPACE
+        - task_key: transformation
+          depends_on:
+            - task_key: notebook_task
+          notebook_task:
+            notebook_path: ../src/transformation.ipynb
+            source: WORKSPACE
 
       environments:
         - environment_key: default

@@ -21,11 +21,11 @@ jobs:
       - run: databricks bundle validate
         working-directory: megatron_auto
         env:
-          DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_SP }}
           DATABRICKS_BUNDLE_ENV: prod
 
       - run: databricks bundle deploy
         working-directory: megatron_auto
         env:
-          DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_SP }}
           DATABRICKS_BUNDLE_ENV: prod

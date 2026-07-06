@@ -34,7 +34,7 @@ targets:
       # We explicitly deploy to /Workspace/Users/amit.k@shyenatechyarns.in to make sure we only have a single copy.
       root_path: /Workspace/Users/amit.k@shyenatechyarns.in/.bundle/${bundle.name}/${bundle.target}
     variables:
-      catalog: dev-sample-1
+      catalog: prod-sample-1
       schema: rnd
     permissions:
       - user_name: amit.k@shyenatechyarns.in

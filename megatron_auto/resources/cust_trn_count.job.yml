@@ -1,0 +1,14 @@
+resources:
+  jobs:
+    cust_wise_taks:
+      name: cust_wise_taks
+      tasks:
+        - task_key: get_cust_trn_count
+          notebook_task:
+            notebook_path: ../src/total_trn_cust_wise
+            source: WORKSPACE
+      queue:
+        enabled: true
+      parameters:
+        - name: catalog
+        - name: schema
